@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:id="@+id/prevDate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/left_arrow"
+            android:onClick="previousMonth" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_margin="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"
+            android:text="Month"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/nextDate"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/right_arrow"
+            android:onClick="nextMonth"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Transaction Summary"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:fontFamily="@font/adamina" />
+    <TextView
+        android:id="@+id/no_Transaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Transactions Found"
+        android:textSize="24sp"
+        android:textColor="@color/colorRed"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/summarylistView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"/>
+
+</LinearLayout>

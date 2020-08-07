@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@color/white"
+    tools:context=".Report">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:id="@+id/prevDate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/left_arrow"
+            android:onClick="previousMonth" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_margin="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"
+            android:text="September"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/nextDate"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/right_arrow"
+            android:onClick="nextMonth"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="PieCart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:fontFamily="@font/adamina" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="420dp" />
+
+    <ToggleButton
+        android:id="@+id/switch1"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:onClick="ChangeData"
+        android:layout_gravity="center"
+        android:showText="true"
+        android:textColor="@color/colorOrange"
+        android:textOff="Type"
+        android:textOn="Categories"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

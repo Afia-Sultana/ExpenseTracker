@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center">
+    <TextView
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:id="@+id/email"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/emailicon"
+
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:drawablePadding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock"
+        android:id="@+id/pass"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Email or Password entered is incorrect"
+        android:textColor="@color/colorRed"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:id="@+id/loginFailed"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="LoginSuccess"
+        app:cornerRadius="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:onClick="signup"
+        android:textStyle="bold"/>
+</LinearLayout>

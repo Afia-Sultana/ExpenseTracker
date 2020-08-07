@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ExpenseTracker</string>
+    <string-array name="catagories">
+        <item>Buisness</item>
+        <item>Salary</item>
+        <item>Clothing</item>
+        <item>Drinks</item>
+        <item>Education</item>
+        <item>Food</item>
+        <item>Fuel</item>
+        <item>Fun</item>
+        <item>Hospital</item>
+        <item>Hotel</item>
+        <item>Loan</item>
+        <item>Medical</item>
+        <item>Merchandise</item>
+        <item>Movie</item>
+        <item>Personal</item>
+        <item>Pets</item>
+        <item>Resturant</item>
+        <item>Shopping</item>
+        <item>Transport</item>
+        <item>Other</item>
+        ...
+    </string-array>
+    <string-array name="transactionhistory">
+        <item>All</item>
+        <item>Day</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+</resources>
